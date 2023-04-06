@@ -1,6 +1,7 @@
 import React, { createContext, useContext, useState, useEffect } from 'react'
 import groupService from './services/GroupService'
 import studentService from './services/StudentService'
+import RegisterService from './services/RegisterService'
 // import registerService from './services/RegisterService'
 
 //2) this is where we create context
@@ -99,6 +100,12 @@ function useHook() {
   useEffect(() => {
     getAllStudents()
   }, [])
+
+  // const registerService = new RegisterService()
+  // registers
+  // const newRegister=  await registerService.createRegister(register)
+   // setRegisters([...registers, newRegister])
+ // }
 
   // // Students
   async function createStudent(student, group, groupId) {

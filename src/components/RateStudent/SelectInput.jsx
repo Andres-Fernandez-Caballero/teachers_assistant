@@ -4,11 +4,11 @@
 ]
 */
 
-export const SelectInput = ({ label, options, onChange }) => {
+export const SelectInput = ({ label, options, onChange, name }) => {
   return (
     <label>
       {label}:
-      <select name="participation" defaultValue="" onChange={onChange}> 
+      <select name={name} defaultValue="" onChange={onChange}> 
         <option value="" disabled>
           -- Choose a rating --
         </option>

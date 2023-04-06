@@ -5,7 +5,7 @@ export const useRateStudents = (student = []) => {
 
     const hasNextStudent = () => {
         if(student.length === 0) { return false}
-        return currentIndexStudent <     student.length
+        return currentIndexStudent < student.length
     }
 
     const nextStudent = () => {
